@@ -1,0 +1,34 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: hua
+    url: jdbc:mysql://127.0.0.1:3306/wenda?useSSL=false&serverTimezone=GMT
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    timeout: 10000
+  mvc:
+    view:
+      prefix: classpath:/templates/
+      suffix: .html
+  thymeleaf:
+    cache: false
+logging:
+  level:
+    com.tastes.mapper: debug
+    com.client.mapper: debug
+pagehelper:
+  helperDialect=mysql
+sms:
+  accessId: LTAIfuWqXxnFbSG2
+  accessKey: tall30BQ0ut1zekYWGOPgz991vdkN3
+  signName: 美味Taste
+  codeTemplate: SMS_162635816
+  product: Dysmsapi
+  domain: dysmsapi.aliyuncs.com
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true

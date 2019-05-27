@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Home</title>
+    <!-- for-mobile-apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content=""/>
+    <script type="application/x-javascript">
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- //for-mobile-apps -->
+    <link th:href="@{/css/bootstrap.css}" rel="stylesheet" type="text/css" media="all"/>
+    <link th:href="@{/css/font-awesome.css}" rel="stylesheet" type="text/css" media="all"/>
+    <!--about-bottom -->
+    <link type="text/css" rel="stylesheet" th:href="@{/css/cm-overlay.css}"/>
+    <!--about-bottom -->
+    <link href="http://fonts.googleapis.com/css?family=Yesteryear" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+    <link th:href="@{/css/style.css}" rel="stylesheet" type="text/css" media="all"/>
+</head>
+
+<body>
+<div class="agile-banner-main" id="home">
+    <div class="banner-layer">
+        <div class="header-main">
+            <div class="container">
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                    </div>
+                    <!-- navbar-header -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a class="scroll hvr-underline-from-center" href="#about">关于</a>
+                            </li>
+                            <li>
+                                <a class="scroll hvr-underline-from-center" href="#contact">联系我们</a>
+                            </li>
+                        </ul>
+                        <ul class="list-right">
+                            <li>
+                                <span class="fa fa-envelope-o list-icon" aria-hidden="true"></span>
+                                <a href="mailto:micalyang@qq.com">micalyang@qq.com</a>
+                            </li>
+                            <li>
+                                <span class="fa fa-phone list-icon" aria-hidden="true"></span>
+                                <p> 1234 423 23 </p>
+                            </li>
+                            <li>
+                                <span class="fa fa-user list-icon" aria-hidden="true"></span>
+                                <a href="/login">登录</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="clearfix"></div>
+                </nav>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!-- //menu -->
+        <!-- banner -->
+        <div class="container">
+            <div class="banner-top">
+                <div class="banner-info">
+                    <h1>
+                        <a href="index.html">
+                            <img src="imgs/logo.png" class="img-responsive" alt=""/>美味Taste</a>
+                    </h1>
+                    <h2>Tasty experience in every bite!</h2>
+
+                    <div class="about-p text-center">
+                        <span class="sub-title"></span>
+                        <span class="fa fa-cutlery" aria-hidden="true"></span>
+                        <span class="sub-title"></span>
+                    </div>
+                    <p>吃出幸福的味道
+                    <p>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!-- //banner -->
+<!-- about -->
+<div class="section w3ls-banner-btm-main" id="about">
+    <div class="container">
+        <div class="banner-btm">
+            <div class="col-md-6 banner-btm-g1">
+                <img src="imgs/about.jpg" class="img-responsive" alt=""/>
+            </div>
+            <div class="col-md-6 banner-btm-g2">
+                <h3 class="title-main">欢迎来到美味Taste</h3>
+                <h4 class="sub-title">我们致力于为餐饮商户解决“效率、客流、资金、数据”四大难题</h4>
+                <p>进店前：顾客可在美味TasteAPP，以及第三方平台提前预约餐位或自助排队取号，并通过手机掌握等位进程，提升餐厅预订到店率、降低排队流失率
+                    <br/>进店后：顾客可通过扫码完成自助点菜和收银，支付成功自动清台，并沉淀为会员，大幅提升餐厅运营效率
+                </p>
+                <div class="find-about">
+                    <a href="#" data-toggle="modal" data-target="#myModal">更多介绍</a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<div class="about-grid">
+    <div class="col-md-6 about-sub-grid">
+        <div class="col-md-6 about-right about-right-flex">
+            <div class="about-bottom-text">
+                <h4 class="title1">预订 </h4>
+                <p class="text">会员收集神器，顾客预订即可成为会员；
+
+                    线上各大平台引流，一键处理订单，更有自动接单功能，餐厅无需人工值守；
+                </p>
+            </div>
+            <div class="about-bottom-grid about-img1">
+            </div>
+        </div>
+        <div class="col-md-6 about-right about-right-flex">
+            <div class="about-bottom-grid about-img2">
+            </div>
+            <div class="about-bottom-text ab1">
+                <h4 class="title1">排队</h4>
+                <p class="text">支持用户现场/手机排队取号；
+
+                    支持用户自助取号；
+
+                    实时推送排队进程；
+
+                    一键操作叫号、就餐、过号；
+
+                </p>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="col-md-6 about-bottom-grid about-bg"></div>
+    <div class="clearfix"></div>
+</div>
+<!-- //about -->
+<!-- //testimonials -->
+<div class="section">
+    <div class="container">
+        <h3 class="w3layouts-title">Taste the best !</h3>
+        <div class="about-bottom">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="Carousel" class="carousel slide">
+
+                        <ol class="carousel-indicators">
+                            <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#Carousel" data-slide-to="1"></li>
+                            <li data-target="#Carousel" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href="imgs/g1.jpg" class="thumbnail cm-overlay">
+                                            <img src="imgs/g1.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="imgs/g2.jpg" class="thumbnail cm-overlay">
+                                            <img src="imgs/g2.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="imgs/g3.jpg" class="thumbnail cm-overlay">
+                                            <img src="imgs/g3.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="imgs/g4.jpg" class="thumbnail cm-overlay">
+                                            <img src="imgs/g4.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href="imgs/g5.jpg" class="thumbnail cm-overlay">
+                                            <img src="imgs/g5.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="imgs/g6.jpg" class="thumbnail cm-overlay">
+                                            <img src="imgs/g6.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="imgs/g7.jpg" class="thumbnail cm-overlay">
+                                            <img src="imgs/g7.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="imgs/g1.jpg" class="thumbnail cm-overlay">
+                                            <img src="imgs/g1.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href="imgs/g2.jpg" class="thumbnail cm-overlay">
+                                            <img src="imgs/g2.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="imgs/g3.jpg" class="thumbnail cm-overlay">
+                                            <img src="imgs/g3.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="imgs/g4.jpg" class="thumbnail cm-overlay">
+                                            <img src="imgs/g4.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="imgs/g5.jpg" class="thumbnail cm-overlay">
+                                            <img src="imgs/g5.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                        </div>
+                        <!--.carousel-inner-->
+                        <a data-slide="prev" href="#Carousel" class="left carousel-control">‹</a>
+                        <a data-slide="next" href="#Carousel" class="right carousel-control">›</a>
+                    </div>
+                    <!--.Carousel-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--menu -->
+<div class="section main-menu" id="menu">
+    <div class="container">
+        <div class="main-menu-bg">
+            <h3 class="w3layouts-title text-center">在线商城</h3>
+            <div class="menu-info">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#testi" aria-controls="testi" role="tab" data-toggle="tab">入驻商家</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">加入我们</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="testi">
+                    <div class="col-md-4 agileinfo-tab-content1">
+                        <img src="/imgs/ph1.jpg" width="294" height="200">
+                    </div>
+                    <div class="col-md-4 agileinfo-tab-content1">
+                        <img src="/imgs/ph2.jpg" width="294" height="200">
+                    </div>
+                    <div class="col-md-4 agileinfo-tab-content1">
+                        <img src="/imgs/ph3.jpg" width="294" height="200">
+                    </div>
+                    <div class="col-md-4 agileinfo-tab-content1">
+                        <img src="/imgs/ph4.jpg" width="294" height="200">
+                    </div>
+                    <div class="col-md-4 agileinfo-tab-content1">
+                        <img src="/imgs/ph5.jpg" width="294" height="200">
+                    </div>
+                    <div class="col-md-4 agileinfo-tab-content1">
+                        <img src="/imgs/ph6.jpg" width="294" height="200">
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="profile" style="height: 516px;text-align: center;padding: 200px">
+                    <a href="#" style="font-size: 50px;font-family: 宋体" class="time">我是商家，我要入驻<img src="imgs/right-sorrow.png"></a>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--menu-->
+<div class="menu-agileits_w3layouts section">
+    <div class="container">
+
+        <div class="load_more">
+            <h3 class="w3layouts-title">
+                <img src="imgs/menu1.png" class="img-responsive" alt=""/>我们的优势</h3>
+            <ul id="myList">
+                <li>
+                    <div class="l_g">
+                        <div class="l_g_r">
+                            <div class="col-md-6 menu-grids">
+                                <div class="w3l-menu-text">
+                                    <div class="menu-text-left">
+                                        <img src="imgs/index-icon-5.png" alt="" class="img-responsive"/>
+                                    </div>
+                                    <div class="menu-text-right">
+                                        <div class="menu-title">
+                                            <h4>效率 </h4>
+
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <p> 进店前：顾客可在美味不用等APP或公众号，以及第三方平台提前预约餐位或自助排队取号，并通过手机掌握等位进程，提升餐厅预订到店率、降低排队流失率
+                                            进店后：顾客可通过扫码完成自助点菜和收银，支付成功自动清台，并沉淀为会员，大幅提升餐厅运营效率</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="w3l-menu-text">
+                                    <div class="menu-text-left">
+                                        <img src="imgs/index-icon-7.png" alt="" class="img-responsive"/>
+                                    </div>
+                                    <div class="menu-text-right">
+                                        <div class="menu-title">
+                                            <h4>资金 </h4>
+
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <p>美味Taste探索布局餐厅供应链金融领域，帮助餐饮商户解决开店及运营资金难题，目前已成功合作10余家餐厅</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 menu-grids">
+                                <div class="w3l-menu-text">
+                                    <div class="menu-text-left">
+                                        <img src="imgs/index-icon-8.png" alt="" class="img-responsive"/>
+                                    </div>
+                                    <div class="menu-text-right">
+                                        <div class="menu-title">
+                                            <h4>数据 </h4>
+
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <p>美味Taste拥有完整丰富的会员获取渠道和场景，并能对会员数据进行多维度分析，形成用户画像，最终实现精细化分层营销，目前已累计为餐厅商户沉淀会员超过7500万；美味不用等更提供掌上大数据后台，餐厅管理者可通过手机轻松掌握餐厅经营状况，管理反应更敏锐，让餐厅赚钱更简单</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="w3l-menu-text">
+                                    <div class="menu-text-left">
+                                        <img src="imgs/index-icon-6.png" alt="" class="img-responsive"/>
+                                    </div>
+                                    <div class="menu-text-right">
+                                        <div class="menu-title">
+                                            <h4>客流 </h4>
+
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <p>美味Taste自有3100万微信公众号粉丝、1000万APP用户，并与携程、百度、支付宝口碑等在线流量巨头达成战略合作，同时与全国500家品牌shopping mall深度合作，全面覆盖线上线下渠道，助力餐厅引流</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<div class="tlinks">Collect from <a href="http://www.cssmoban.com/">企业网站模板</a></div>
+<!--reservation-->
+<div class="reservation book-right">
+    <div class="container">
+        <h3 class="w3layouts-title title-reserve">我要预约</h3>
+        <!--<div class="book-info">
+            -->
+        <div class="book-left1"></div>
+        <div class="book-right1">
+            <form action="#" method="post" class="book-right2">
+                <div class="date-field">
+                    <label>日期 :</label>
+                    <input type="text" id="datepicker" value="" onfocus="this.value = '';"
+                           onblur="if (this.value == '') {this.value = '';}"
+                           required="">
+                </div>
+                <div class="form-left">
+                    <label>人数 :</label>
+                    <select required>
+                        <option value="">1 人</option>
+                        <option value="1">2</option>
+                        <option value="2">3</option>
+                        <option value="3">4</option>
+                        <option value="4"> 5</option>
+                        <option value="5">更多</option>
+                    </select>
+                </div>
+                <div class="form-right">
+                    <label>时间 :</label>
+                    <select required>
+                        <option value="">选择时间</option>
+                        <option value="1">10:00</option>
+                        <option value="2">11:00</option>
+                        <option value="3">12:00</option>
+                        <option value="4">13:00</option>
+                        <option value="4">14:00</option>
+                        <option value="4">15:00</option>
+                        <option value="4">16:00</option>
+                        <option value="4">17:00</option>
+                        <option value="4">18:00</option>
+                        <option value="4">19:00</option>
+                        <option value="4">20:00</option>
+                        <option value="4">21:00</option>
+                        <option value="4">22:00</option>
+
+
+                    </select>
+
+                </div>
+                <div class="clearfix"></div>
+                <div class="phone-info">
+                    <label>联系电话 :</label>
+                    <input type="text" placeholder="Phone Number" onfocus="this.value = '';"
+                           onblur="if (this.value == '') {this.value = 'Contact';}"
+                           required="">
+                </div>
+                <input type="submit" value="下单">
+            </form>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<!-- //chef -->
+<!-- slid -->
+<div class="slid">
+    <div class="slid-text">
+        <h4>关于我们</h4>
+        <p>理念：
+            中立合作、开放开源、用户共享<br />
+            品牌slogan/愿景：
+            连接美味，智慧生活<br />
+            企业使命：
+            推动餐饮智慧化，让人们享受极致美味体验<br />
+            品牌定位：
+            专业的智慧餐饮服务商</p>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<!-- //slid -->
+
+<!-- contact -->
+<div class="contact-bottom" id="contact">
+    <div class="col-md-6  map">
+        <iframe src="" style="border:0" allowfullscreen></iframe>
+
+    </div>
+    <div class="col-md-6 contact-right">
+        <h3 class="title-contact">给我们留言吧</h3>
+        <form action="#" method="post">
+            <div class="contact-input">
+                <input type="text" class="name" name="name" placeholder="姓名" required="">
+            </div><br /> <br />
+            <div class="contact-input">
+                <input type="text" class="name" name="name" placeholder="手机" required="">
+            </div>
+            <div class="contact-input">
+                <input type="email" class="name" name="name" placeholder="城市" required="">
+            </div>
+            <div class="contact-input">
+                <textarea placeholder="留言内容" required></textarea>
+            </div>
+            <input type="submit" value="发送">
+        </form>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<!-- //contact -->
+<!--footer-->
+<div class="footer-grid">
+    <div class="container">
+        <div class="footer_grid_bottom contact">
+            <ul>
+
+                <li>
+                    <span class="fa fa-envelope-o" aria-hidden="true"></span>
+                    <a href="mailto:micalyang@qq.com">micalyang@qq.com</a>
+                </li>
+                <li>
+                    <span class="fa fa-phone" aria-hidden="true"></span>
+                    <p>+1234 567 567</p>
+                </li>
+                <li>
+                    <span class="fa fa-map-marker" aria-hidden="true"></span>
+                    <p>四川省成都市成都理工大学</p>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Tooltip -->
+<div class="tooltip-content">
+    <div class="modal fade features-modal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 class="modal-title">
+                        <img src="imgs/logo.png" class="img-responsive img1" alt=""/>美味Taste</h3>
+                </div>
+                <div class="modal-body">
+                    <img src="imgs/modal.jpg" class="img-responsive" alt="image">
+                    <h4>Tasty experience in every bite!</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //Tooltip -->
+
+<!-- js -->
+<script src="js/jquery-2.2.3.min.js"></script>
+<!--/js-->
+<!-- //gallery -->
+<script src="js/jquery.tools.min.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/jquery.cm-overlay.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.cm-overlay').cmOverlay();
+    });
+</script>
+<!-- //gallery -->
+<!--start-date-piker-->
+<link rel="stylesheet" href="css/jquery-ui.css"/>
+<script src="js/jquery-ui.js"></script>
+<script>
+    $(function () {
+        $("#datepicker,#datepicker1").datepicker();
+    });
+</script>
+<!-- /End-date-piker -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+            event.preventDefault();
+
+            $('html,body').animate({
+                scrollTop: $(this.hash).offset().top
+            }, 1000);
+        });
+    });
+</script>
+<!--//end-smooth-scrolling-->
+<!-- smooth-scrolling-of-move-up  -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        /*
+        var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear'
+        };
+        */
+
+        $().UItoTop({
+            easingType: 'easeOutQuart'
+        });
+
+    });
+</script>
+
+
+<script src="js/SmoothScroll.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        size_li = $("#myList li").size();
+        x = 1;
+        $('#myList li:lt(' + x + ')').show();
+        $('#loadMore').click(function () {
+            x = (x + 1 <= size_li) ? x + 1 : size_li;
+            $('#myList li:lt(' + x + ')').show();
+        });
+        $('#showLess').click(function () {
+            x = (x - 1 < 0) ? 1 : x - 1;
+            $('#myList li').not(':lt(' + x + ')').hide();
+        });
+    });
+</script>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/bootstrap.js"></script>
+
+
+</body>
+
+</html>
